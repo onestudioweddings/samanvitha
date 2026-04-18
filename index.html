@@ -6298,6 +6298,7 @@ window.addEventListener("load", () => {
 
 
 
+  
 
 
   // Also run once immediately
@@ -6481,10 +6482,12 @@ setInterval(() => {
           const card = el.closest('[data-framer-name*="Event Card"]');
           if (!card) return;
 
+      
+
           // 🔹 Update Venue
           const venue = card.querySelector('[data-framer-name="Venue"] p');
           if (venue) {
-            venue.innerText = "VMR Convention, Nagarjuna Sagar Road, Neeladri Nagar, Hyd"; // 👉 change this
+            venue.innerHTML = "VMR Convention,<br> Nagarjuna Sagar Road,<br> Neeladri Nagar, Hyd";
           }
 
           // 🔹 Update Time
