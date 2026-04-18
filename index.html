@@ -6072,18 +6072,23 @@ window.addEventListener("load", () => {
 });
 </script>
 
+  <!-- whatsapp -->
+
 <script>
-window.addEventListener("load", () => {
+(function () {
 
-  const link = document.querySelector(
-    'a[data-framer-name="Section 2"]'
-  );
-
-  if (link) {
-    link.href = "https://wa.me/919999999999";
+  function updateWhatsApp() {
+    const link = document.querySelector('a[data-framer-name="Section 2"]');
+    if (link) {
+      link.href = "https://wa.me/916303832438";
+    }
   }
 
-});
+  setTimeout(updateWhatsApp, 500);
+  setTimeout(updateWhatsApp, 1500);
+  setTimeout(updateWhatsApp, 3000);
+
+})();
 </script>
 
 
@@ -6259,7 +6264,7 @@ window.addEventListener("load", () => {
         .replace(/Shri Srinivasan Iyer/g, 'Sri Ashok')
         .replace(/Daughter of/g, '')
         .replace(/Friday, March 12th 2026/g, 'Thursday, 23 April 2026')
-        .replace(/Friday, March 17th 2026/g, 'Sunday, 23 April 2026')        
+        .replace(/Friday, March 17th 2026/g, 'Sunday, 26 April 2026')        
         // .replace(/Rambagh, Jaipur/g, 'Shri Maheshwari Devi Temple, Bengaluru, Karnataka<br>')
         .replace(/Rambagh, Jaipur/g, 'KMR Convention Hall, Gajwel, Siddipet'.replace(/,\s*/g, '\n'))
         .replace(/6pm Onwards/g, '8:06 AM')
@@ -6326,7 +6331,7 @@ setInterval(() => {
   const link = document.querySelector('a[data-framer-name="Section 3"]');
 
   if (link && link.href !== "https://instagram.com/") {
-    link.href = "https://instagram.com";
+    link.href = "https://www.instagram.com/samanvitha__235/";
   }
 
 }, 1000);
@@ -6336,13 +6341,15 @@ setInterval(() => {
 
  /* Hide Staff & Parking sections */
 
-<style>
+<!-- <style>
 
-/* [data-framer-name="Staff"], */
+[data-framer-name="Staff"], 
 [data-framer-name="Parking"] {
   display: none !important;
 }
-</style> 
+</style>  -->
+
+
 
 
 
