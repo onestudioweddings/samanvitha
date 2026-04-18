@@ -6223,30 +6223,6 @@ document.addEventListener("click", startMusic);
 document.addEventListener("touchstart", startMusic);
 </script>
 
-
-<!-- meta data title -->
-
-<script>
-window.addEventListener("load", () => {
-
-  document.title = "Wedding Invitation - Samanvitha & Raviteja";
-
-  const setMeta = (property, value) => {
-    let tag = document.querySelector(`meta[property="${property}"]`);
-    if (!tag) {
-      tag = document.createElement("meta");
-      tag.setAttribute("property", property);
-      document.head.appendChild(tag);
-    }
-    tag.setAttribute("content", value);
-  };
-
-  setMeta("og:title", "Wedding Invitation - Samanvitha & Raviteja");
-  setMeta("og:description", "Come join our wedding celebration!");
-  setMeta("og:image", "https://samanvithawedsraviteja.vercel.app/images/5-img.jpg"); 
-
-});
-</script>
   
   
 
