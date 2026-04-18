@@ -6305,6 +6305,8 @@ window.addEventListener("load", () => {
 
   
 
+  
+
 
   // Also run once immediately
   document.addEventListener("DOMContentLoaded", () => {
@@ -6341,13 +6343,21 @@ setInterval(() => {
 
  /* Hide Staff & Parking sections */
 
-<!-- <style>
+ <!-- <style>
 
-[data-framer-name="Staff"], 
+[data-framer-name="Staff"],
+[data-framer-name="Hashtag"], 
 [data-framer-name="Parking"] {
   display: none !important;
 }
 </style>  -->
+
+/* Hide entire Hashtag section (both Desktop & Mobile variants) */
+<style>
+.framer-15gcxdt-container {
+  display: none !important;
+}
+</style>
 
 
 
@@ -6379,6 +6389,33 @@ setInterval(() => {
   setTimeout(updateStaffSection, 500);
   setTimeout(updateStaffSection, 1500);
   setTimeout(updateStaffSection, 3000);
+
+})();
+</script>
+
+<!-- valet parking -->
+
+<script>
+(function () {
+
+  function updateParkingText() {
+
+    document.querySelectorAll(
+      '[data-framer-name="#BadriKiDulhania"] p'
+    ).forEach(p => {
+
+      if (p.innerText.includes("Valet parking")) {
+        p.innerText = "Parking for all our guests will be available at the venue";
+      }
+
+    });
+
+  }
+
+  // Run multiple times (Framer delay)
+  setTimeout(updateParkingText, 500);
+  setTimeout(updateParkingText, 1500);
+  setTimeout(updateParkingText, 3000);
 
 })();
 </script>
